@@ -1,0 +1,99 @@
+/* OPTIMIERUNG */
+body.admin_tour_schedule_plans div.header--production {
+    display: none !important;
+}
+body.admin_tour_schedule_plans div#active_admin_content {
+    padding: 0px !important;
+}
+body.admin_tour_schedule_plans .column {
+    margin: 0px !important;
+}
+body.admin_tour_schedule_plans .panel_contents {
+    padding: 0px !important;
+}
+/* size of map */
+body.admin_tour_schedule_plans div.map.Map.Map--large {
+    width: calc(100vw - 620px) !important;
+    height: calc(100vh - 25px) !important;
+}
+body.admin_tour_schedule_plans div.FlexAlign input {
+    position: fixed;
+    top: 25px;
+    right: calc(50vw - 150px);
+    z-index: 9999;
+    margin: 0px;
+    width: 300px;
+    border-radius: 10px !important;
+}
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview table thead {
+    display: none;
+}
+body.admin_tour_schedule_plans div.attributes_table>table {
+    display: none;
+}
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview {
+    height: calc(100vh - 25px);
+}
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview tr.Table__row--highlighted {
+    background-color: var(--nord13) !important;
+}
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview tr.Table__row--highlighted * {
+    color: var(--nord3) !important;
+}
+body.admin_tour_schedule_plans h2#page_title {
+    font-size: 0.7em;
+}
+body.admin_tour_schedule_plans div#summary h3 {
+    display: none;
+}
+body.admin_tour_schedule_plans div#title_bar.title_bar {
+    padding: 8px;
+    height: 25px;
+}
+body.admin_tour_schedule_plans td.col.col-number_of_courier_breaks {
+    display: none !important;
+}
+body.admin_tour_schedule_plans .col-stop_count,
+body.admin_tour_schedule_plans div.index--number {
+    display: none !important;
+}
+body.admin_tour_schedule_plans .Map__warning,
+body.admin_tour_schedule_plans  .Map--dirty {
+    border-top: 40px solid var(--nord11) !important;
+    border: 4px solid var(--nord11) !important;
+    color: var(--nord6) !important;
+    background-color: var(--nord11) !important;
+}
+
+/* FAST DISPATCH */
+body.admin_fast_dispatch div.header--production {
+    display: none !important;
+}
+body.admin_fast_dispatch div.columns div.column:nth-of-type(2) > div:nth-child(2) {
+    display: none !important;
+}
+body.admin_fast_dispatch div.tour--list div.panel_contents div.ScrollableContainer {
+    height: calc(100vh - 80px);
+}
+body.admin_fast_dispatch div.title_bar {
+    display: none;
+}
+body.admin_fast_dispatch div#active_admin_content,
+body.admin_fast_dispatch div.panel_contents {
+    padding: 0px !important;
+}
+body.admin_fast_dispatch div.column * {
+    margin: 0px !important;
+}
+body.admin_fast_dispatch h3 {
+    display: none;
+}
+body.admin_fast_dispatch div.map-wrapper {
+    height: 100vh;
+}
+tr.FastDispatch__table-row--highlighted {
+    background-color: var(--nord13);
+}
+tr.FastDispatch__table-row--highlighted > * {
+    color: var(--nord3) !important;
+}
