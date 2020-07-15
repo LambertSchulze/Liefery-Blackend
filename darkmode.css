@@ -1,0 +1,295 @@
+/***********
+ * GENERAL *
+ ***********/
+* {
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+body {
+    --nordbg: #242933;
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+    
+    background: var(--nordbg) !important;
+    /*font-family: monospace !important;*/
+    color: var(--nord6);
+}
+h3 {
+    background: var(--nord1) !important;
+    color: var(--nord4) !important;
+}
+
+/***************
+ * MENU LEISTE *
+ ***************/
+div#header.header--production {
+    background-color: var(--nordbg);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999999999999999999999999999999999999999999999999999999;
+}
+div#header,
+div#header ul.menu,
+div#header ul.menu > li > a {
+    background-color: var(--nord0);
+    color: var(--nord6);
+}
+div#header>h1#site_title.site_title {
+    visibility: hidden !important;
+}
+div#header>h1#site_title.site_title:after {
+    content: "Blackend" !important;
+    background-color: var(--nord0) !important;
+    color: var(--nord6) !important;
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: 16px;
+}
+/* aktive Seite */
+div#header .menu_item.current>a {
+    background-color: var(--nord2) !important;
+    color: var(--nord6) !important;
+    text-shadow: none !important;
+}
+/* hover */
+.header-item li > a:hover,
+.header-item li > a:focus,
+.header-item li.current > a {
+    background-color: var(--nord3) !important;
+    color: var(--nord6);
+}
+/* Avatar */
+ul#utility_nav.header-item {
+    background: url('file:\\\C:\Users\Lambert Schulze\Desktop\DSC_0200.JPG') no-repeat !important;
+    background-size: 40px !important;
+    border-radius: 50% !important;
+}
+
+/*********************************
+ * Title bar (title of the page) *
+ *********************************/
+div#title_bar.title_bar {
+    padding-top: 64px;
+    background-color: var(--nord0);
+    color: var(--nord6);
+}
+div#title_bar span.breadcrumb > a {
+    color: var(--nord8);
+}
+div#title_bar span.action_item > a,
+div#title_bar span.action_item > a:hover {
+    color: var(--nord8);
+}
+span.action_item input#quick_search {
+    border: none;
+    background-color: var(--nord3);
+    color: var(--nord4);
+}
+
+/****************
+ * Main Content *
+ ****************/
+div.table_tools {
+    background-color: var(--nord0);
+    border: none !important;
+}
+div#main_content a.table_tools_button {
+    color: var(--nord8);
+}
+div#main_content li.selected a.table_tools_button {
+    color: var(--nord10);
+}
+div#main_content nav.pagination {
+    background-color: var(--nord0);
+    border: none;
+}
+div#main_content nav.pagination > span > a {
+    color: var(--nord8);
+}
+div#main_content nav.pagination > span.current {
+    color: var(--nord10);
+}
+div.pagination_information {
+    color: var(--nord3);
+}
+div.paginated_collection {
+    background-color: var(--nord0);
+}
+div#main_content table {background-color: var(--nord0) !important;}
+div#main_content table th,
+div#main_content table td {
+    color: var(--nord4);
+    border-bottom-style: none;
+}
+div#main_content table > thead {background-color: var(--nord0);}
+div#main_content table > thead th,
+div#main_content table > thead th a {color: var(--nord4);}
+div#main_content table > thead th a:before {border-bottom-color: var(--nord4);}
+div#main_content table > thead th a:after {border-top-color: var(--nord4);}
+div#main_content table > tbody > tr.odd {background-color: var(--nord2);}
+div#main_content table > tbody > tr.even {background-color: var(--nord1);}
+div#main_content table > tbody a {color: var(--nord12);}
+tr.ttna--critical > td:first-of-type {background-color: var(--nord11);}
+tr.ttna--warning > td:first-of-type {background-color: var(--nord13);}
+tr.ttna--normal > td:first-of-type {background-color: var(--nord14);}
+
+span.status_tag.open {color: var(--nord4); color: var(--nord3);}
+span.status_tag.picked_up {background: var(--nord7);}
+span.status_tag.undeliverable {background: var(--nord10);}
+span.status_tag.dispatched {background: var(--nord15);}
+span.status_tag.calculated {background: var(--nord15);}
+span.status_tag.ja {background: var(--nord10);}
+span.status_tag.no {background: var(--nord11);}
+span.status_tag.dropped_off {background: var(--nord14);}
+span.status_tag.bei_empfänger {background: var(--nord14);}
+span.status_tag.planning {background: var(--nord15);}
+span.status_tag.done {background: var(--nord14);}
+span.status_tag.closed {background: var(--nord11);}
+span.status_tag.delivered {background: var(--nord14);}
+span.status_tag.failed {background: var(--nord11);}
+span.status_tag.canceled {background: var(--nord11);}
+span.status_tag.waiting {background: var(--nord4); color: var(--nord3);}
+
+i.fa.fa-user {color: var(--nord14);}
+i.fa.fa-comments {color: var(--nord12);}
+i.fa.fa-barcode.green {color: var(--nord14);}
+i.fa.fa-barcode.blue {color: var(--nord9);}
+i.fa.fa-times.fa-lg {color: var(--nord11);}
+i.fa.fa-check.fa-lg {color: var(--nord14);}
+
+/***********
+ * SIDEBAR *
+ ***********/
+div.sidebar h3 {
+    background-color: var(--nord0);
+    color: var(--nord4);
+}
+div.panel_contents {background-color: var(--nord1);}
+div.panel_contents label {color: var(--nord4);}
+div.panel_contents input,
+div.panel_contents select {
+    border: none !important;
+    background-color: var(--nord3) !important;
+    color: var(--nord4) !important;
+}
+div.buttons a,
+div.buttons a:hover {color: var(--nord11);}
+
+/* Buttons */
+a.button,
+a.Button,
+button.Button,
+div.Button a{
+    color: var(--nord8) !important;
+}
+a.button:hover,
+a.Button:hover,
+button.Button:hover,
+div.Button a:hover {
+    text-decoration: underline;
+}
+
+/* Tour Verteilung */
+div.shipment--count {
+    color: var(--nord1);
+    background-color: var(--nord4) !important;
+}
+
+/* Kommentare */
+table.event_log.Table tbody * {
+    color: var(--nord4) !important;
+    background-color: var(--nord3) !important;
+}
+table.event_log.Table tbody tr.comment:odd * {
+    background-color: var(--nord2) !important;
+}
+textarea#comment_text {
+    background-color: var(--nord3);
+    border-color: var(--nord3);
+    color: var(--nord4);
+}
+
+/* diverses */
+span.blank_slate {
+    color: var(--nord4);
+    border-color: var(--nord3);
+}
+div.blank_slate_container {
+    background-color: var(--nord0);
+}
+/* selections */
+*::selection {
+    background-color: var(--nord8) !important;
+    color: var(--nord6) !important;
+}
+
+/* round avatars */
+img.avatar_thumb,
+img.user--thumb,
+img.tour-list-item__courier-avatar{
+    border-radius: 50%;
+}
+
+/* Pop-Ups (bottom, with transparency)*/
+div.flash.flash_notice {
+    background-color: rgba(136,192,208,0.8);
+    color: var(--nord1);
+}
+div.flash.flash_warning {
+    background-color: rgba(235,203,139,0.8);
+    color: var(--nord1);
+}
+div.flash.flash_success {
+    background-color: rgba(163,190,140,0.8);
+    color: var(--nord1);
+}
+div.flash.flash_error {
+    background-color: rgba(191,97,106,0.8);
+    color: var(--nord1);
+}
+/* Banner (Top)*/
+div.Banner__content {
+    background-color: var(--nord13);
+    color: var(--nord3);
+    border-bottom: none;
+}
+
+/* Footer */
+div#footer p {
+    color: var(--nord1);
+}
+
+/* Sprach Switcher ausblenden */
+.OptionsSwitcher {
+    display: none;
+}
+/* Nach oben immer anzeigen */
+.scroll--to--top {
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+    margin: 0;
+    padding: 10px;
+    color: var(--nord11);
+}
+
+/* hotfix for white hover on tables */
+table tbody tr:hover {
+    background-color: var(--nord3) !important;
+}
