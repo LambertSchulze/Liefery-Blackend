@@ -1,8 +1,8 @@
 # Liefery-Blackend
-Custom (Stylus)[https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne]-theme for the Backend at Liefery.
+Custom [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)-theme for the Backend at Liefery.
 
 ## UI changes
-Copy and paste the 'darkmode.css' into Stylus for darkmode. The color palette used is the (Nord color scheme)[https://www.nordtheme.com/].
+Copy and paste the 'darkmode.css' into Stylus for darkmode. The color palette used is the [Nord color scheme](https://www.nordtheme.com/).
 
 In adition, the following functionality is changes:
 - main navigation sticks to the top
