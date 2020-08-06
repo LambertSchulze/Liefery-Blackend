@@ -2,7 +2,7 @@
 Custom [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)-theme for the Backend at Liefery.
 
 ## UI changes
-Copy and paste the 'darkmode.css' into Stylus for darkmode. The color palette used is the [Nord color scheme](https://www.nordtheme.com/).
+Copy and paste the `darkmode.css` into Stylus for darkmode. The color palette used is the [Nord color scheme](https://www.nordtheme.com/).
 
 In adition, the following functionality is changes:
 - main navigation sticks to the top
@@ -12,7 +12,7 @@ In adition, the following functionality is changes:
 **Note:** adding the style for the whole *liefery.com* domain messes up the colors on the homepage, fulfillment app and staging webpages.
 
 ## UX changes
-Copy and paste the 'layout.css' into Stylus for alternative layout in *tour-schedule-plan* and *fast-dispatch* pages.
+Copy and paste the `layout.css` into Stylus for alternative layout in *tour-schedule-plan* and *fast-dispatch* pages.
 
 #### Tour-schedule-plan changes
 - as much screen space as possible is used for map and tour list
