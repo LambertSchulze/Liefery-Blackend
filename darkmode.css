@@ -165,6 +165,7 @@ span.status_tag.delivered {background: var(--nord14);}
 span.status_tag.failed {background: var(--nord11);}
 span.status_tag.canceled {background: var(--nord11);}
 span.status_tag.waiting {background: var(--nord4); color: var(--nord3);}
+span.status_tag.visited {background: var(--nord7);}
 
 i.fa.fa-user {color: var(--nord14);}
 i.fa.fa-comments {color: var(--nord12);}
