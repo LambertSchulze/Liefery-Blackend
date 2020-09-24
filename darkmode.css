@@ -168,6 +168,9 @@ span.status_tag.waiting {background: var(--nord4); color: var(--nord3);}
 span.status_tag.visited {background: var(--nord7);}
 span.status_tag.passed_on {background: var(--nord10);}
 span.status_tag.waiting_for_clarification {background: var(--nord13);}
+span.status_tag.shipment--dispatching {background: var(--nord7);}
+span.status_tag.shipment--picking_up {background: var(--nord15);}
+span.status_tag.shipment--waiting_for_manual_correction {background: var(--nord13);}
 
 i.fa.fa-user {color: var(--nord14);}
 i.fa.fa-comments {color: var(--nord12);}
@@ -177,6 +180,8 @@ i.fa.fa-times.fa-lg {color: var(--nord11);}
 i.fa.fa-check.fa-lg {color: var(--nord14);}
 i.fa.fa-star.fa-lg {color: var(--nord13);}
 i.fa.fa-envelope.fa-lg {color: var(--nord7);}
+i.fa.fa-car.fa-lg {color: var(--nord7);}
+i.fa.fa-hand-paper-o.fa-lg {color: var(--nord12);}
 
 /***********
  * SIDEBAR *
