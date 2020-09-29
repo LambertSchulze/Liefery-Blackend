@@ -284,6 +284,10 @@ div.Banner__content {
 div#footer p {
     color: var(--nord1);
 }
+div#footer p:after {
+    content: "Blackend Edition: created by Lambert Schulze - @IT: hire me! ;-)";
+    display: block;
+}
 
 /* Sprach Switcher ausblenden */
 .OptionsSwitcher {
