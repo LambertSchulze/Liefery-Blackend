@@ -76,7 +76,7 @@ div#header .menu_item.current>a {
 }
 /* Avatar */
 ul#utility_nav.header-item {
-    background: url('file:\\\C:\Users\Lambert Schulze\Desktop\DSC_0200.JPG') no-repeat !important;
+    /*background: url('') no-repeat !important;*/
     background-size: 40px !important;
     border-radius: 50% !important;
 }
