@@ -25,23 +25,18 @@ body.admin_tour_schedule_plans div.FlexAlign input {
     width: 300px;
     border-radius: 10px !important;
 }
-body.admin_tour_schedule_plans div.tour--schedule--plan--overview table thead {
-    display: none;
-}
+
 body.admin_tour_schedule_plans div.attributes_table>table {
     display: none;
 }
 body.admin_tour_schedule_plans div.tour--schedule--plan--overview {
     height: calc(100vh - 25px);
-}
-body.admin_tour_schedule_plans div.tour--schedule--plan--overview tr.Table__row--highlighted {
-    background-color: var(--nord13) !important;
-}
-body.admin_tour_schedule_plans div.tour--schedule--plan--overview tr.Table__row--highlighted * {
-    color: var(--nord3) !important;
+    overflow: auto;
 }
 body.admin_tour_schedule_plans h2#page_title {
     font-size: 0.7em;
+    max-width: 1000px;
+    white-space: nowrap;
 }
 body.admin_tour_schedule_plans div#summary h3 {
     display: none;
@@ -50,19 +45,27 @@ body.admin_tour_schedule_plans div#title_bar.title_bar {
     padding: 8px;
     height: 25px;
 }
-body.admin_tour_schedule_plans td.col.col-number_of_courier_breaks {
+body.admin_tour_schedule_plans .col.col-number_of_courier_breaks {
     display: none !important;
 }
-body.admin_tour_schedule_plans .col-stop_count,
-body.admin_tour_schedule_plans div.index--number {
+body.admin_tour_schedule_plans .col-stop_count {
     display: none !important;
 }
-body.admin_tour_schedule_plans .Map__warning,
-body.admin_tour_schedule_plans  .Map--dirty {
-    border-top: 40px solid var(--nord11) !important;
-    border: 4px solid var(--nord11) !important;
-    color: var(--nord6) !important;
-    background-color: var(--nord11) !important;
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview .col:first-child {
+    display: none !important;
+}
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview .col {
+    padding: 2px 8px !important;
+}
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview tr,
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview th {
+    height: 1em;
+}
+body.admin_tour_schedule_plans span.action_item a {
+    background: white;
+    height: 25px;
+    padding: 0px !important;
+    line-height: 25px !important;
 }
 
 /* FAST DISPATCH */
