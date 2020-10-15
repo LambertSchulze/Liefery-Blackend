@@ -1,21 +1,35 @@
-/* OPTIMIERUNG */
-body.admin_tour_schedule_plans div.header--production {
+/****************
+*  OPTIMIERUNG  *
+*****************/
+
+/* nicht benoetigte Informationen ausblenden */
+body.admin_tour_schedule_plans div.header--production,
+body.admin_tour_schedule_plans div#summary h3,
+body.admin_tour_schedule_plans .col.col-number_of_courier_breaks,
+body.admin_tour_schedule_plans .col-stop_count,
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview .col:first-child,
+body.admin_tour_schedule_plans div.attributes_table > table,
+body.admin_tour_schedule_plans ul.OptionsSwitcher {
     display: none !important;
 }
-body.admin_tour_schedule_plans div#active_admin_content {
-    padding: 0px !important;
-}
-body.admin_tour_schedule_plans .column {
-    margin: 0px !important;
-}
+
+/* delete border gap from card components */
+body.admin_tour_schedule_plans div#active_admin_content,
 body.admin_tour_schedule_plans .panel_contents {
     padding: 0px !important;
 }
-/* size of map */
-body.admin_tour_schedule_plans div.map.Map.Map--large {
-    /*width: calc(100vw - 620px) !important;*/
+/* delete gap between top map and table */ 
+body.admin_tour_schedule_plans .column {
+    margin: 0px !important;
+}
+
+/* map sizing */
+body.admin_tour_schedule_plans .overview-map {
+    width: calc(100vw - 680px) !important;
     height: calc(100vh - 25px) !important;
 }
+
+/* fix button for calculation */
 body.admin_tour_schedule_plans div.FlexAlign input {
     position: fixed;
     top: 25px;
@@ -26,9 +40,12 @@ body.admin_tour_schedule_plans div.FlexAlign input {
     border-radius: 10px !important;
 }
 
-body.admin_tour_schedule_plans div.attributes_table>table {
-    display: none;
+/* increase border of dirty map */
+body.admin_tour_schedule_plans .Map--dirty {
+    border: 8px solid #ef8827;
 }
+
+/* overview table sizing */
 body.admin_tour_schedule_plans div.tour--schedule--plan--overview {
     height: calc(100vh - 25px);
     overflow: auto;
@@ -36,38 +53,28 @@ body.admin_tour_schedule_plans div.tour--schedule--plan--overview {
 body.admin_tour_schedule_plans div.columns.FlexGrid {
     align-items: stretch;
 }
-body.admin_tour_schedule_plans div.columns.FlexGrid__col {
-    width: auto !important;
-}
 
 body.admin_tour_schedule_plans h2#page_title {
     font-size: 0.7em;
+    max-width: calc(100vw - 630px);
     white-space: nowrap;
+    overflow: hidden;
 }
-body.admin_tour_schedule_plans div#summary h3 {
-    display: none;
-}
+
 body.admin_tour_schedule_plans div#title_bar.title_bar {
     padding: 8px;
     height: 25px;
 }
-body.admin_tour_schedule_plans div.tour--schedule--plan--overview,
-body.admin_tour_schedule_plans div.tour--schedule--plan--overview table {
-    width: auto;
-}
 
-body.admin_tour_schedule_plans .col.col-number_of_courier_breaks {
-    display: none !important;
-}
-body.admin_tour_schedule_plans .col-stop_count {
-    display: none !important;
-}
-body.admin_tour_schedule_plans div.tour--schedule--plan--overview .col:first-child {
-    display: none !important;
-}
-body.admin_tour_schedule_plans div.tour--schedule--plan--overview .col {
+/* minimize height in table rows */
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview .col,
+body.admin_tour_schedule_plans table.TourPlan .col {
     padding: 2px 8px !important;
 }
+body.admin_tour_schedule_plans table.TourPlan .col-tour_position {
+    padding-left: 16px !important;
+}
+
 body.admin_tour_schedule_plans div.tour--schedule--plan--overview tr,
 body.admin_tour_schedule_plans div.tour--schedule--plan--overview th {
     height: 1em;
@@ -78,24 +85,36 @@ body.admin_tour_schedule_plans span.action_item a {
     padding: 0px !important;
     line-height: 25px !important;
 }
+
+/* set Banner to bottom of map */
 body.admin_tour_schedule_plans div.Banner {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    max-width: calc(100vw - 640px);
+    width: calc(100vw - 700px);
     z-index: 999;
     margin: 0px;
 }
 body.admin_tour_schedule_plans div.Banner div.Banner__content {
-    padding: 0.4em;
+    padding: 1em;
 }
 body.admin_tour_schedule_plans div.Banner div.Banner__content ul {
     margin-top: 0.4em;
     margin-bottom: 0px;
 }
 
+/* fix position of back-to-top-button */
+body.admin_tour_schedule_plans .scroll--to--top {
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+    margin: 0;
+    padding: 10px;
+}
 
-/* FAST DISPATCH */
+/******************
+*  FAST DISPATCH  *
+*******************/
 body.admin_fast_dispatch div.header--production {
     display: none !important;
 }
@@ -120,10 +139,4 @@ body.admin_fast_dispatch h3 {
 }
 body.admin_fast_dispatch div.map-wrapper {
     height: 100vh;
-}
-tr.FastDispatch__table-row--highlighted {
-    background-color: var(--nord13);
-}
-tr.FastDispatch__table-row--highlighted > * {
-    color: var(--nord3) !important;
 }
