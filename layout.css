@@ -13,7 +13,7 @@ body.admin_tour_schedule_plans .panel_contents {
 }
 /* size of map */
 body.admin_tour_schedule_plans div.map.Map.Map--large {
-    width: calc(100vw - 620px) !important;
+    /*width: calc(100vw - 620px) !important;*/
     height: calc(100vh - 25px) !important;
 }
 body.admin_tour_schedule_plans div.FlexAlign input {
@@ -33,9 +33,15 @@ body.admin_tour_schedule_plans div.tour--schedule--plan--overview {
     height: calc(100vh - 25px);
     overflow: auto;
 }
+body.admin_tour_schedule_plans div.columns.FlexGrid {
+    align-items: stretch;
+}
+body.admin_tour_schedule_plans div.columns.FlexGrid__col {
+    width: auto !important;
+}
+
 body.admin_tour_schedule_plans h2#page_title {
     font-size: 0.7em;
-    max-width: 1000px;
     white-space: nowrap;
 }
 body.admin_tour_schedule_plans div#summary h3 {
@@ -45,6 +51,11 @@ body.admin_tour_schedule_plans div#title_bar.title_bar {
     padding: 8px;
     height: 25px;
 }
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview,
+body.admin_tour_schedule_plans div.tour--schedule--plan--overview table {
+    width: auto;
+}
+
 body.admin_tour_schedule_plans .col.col-number_of_courier_breaks {
     display: none !important;
 }
@@ -67,6 +78,22 @@ body.admin_tour_schedule_plans span.action_item a {
     padding: 0px !important;
     line-height: 25px !important;
 }
+body.admin_tour_schedule_plans div.Banner {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    max-width: calc(100vw - 640px);
+    z-index: 999;
+    margin: 0px;
+}
+body.admin_tour_schedule_plans div.Banner div.Banner__content {
+    padding: 0.4em;
+}
+body.admin_tour_schedule_plans div.Banner div.Banner__content ul {
+    margin-top: 0.4em;
+    margin-bottom: 0px;
+}
+
 
 /* FAST DISPATCH */
 body.admin_fast_dispatch div.header--production {
