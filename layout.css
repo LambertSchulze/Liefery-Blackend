@@ -16,7 +16,7 @@ body.admin_tour_schedule_plans ul.OptionsSwitcher {
 /* fix position of calculation button */
 body.admin_tour_schedule_plans div.FlexAlign input {
     position: fixed;
-    top: 25px;
+    top: 29px;
     right: calc(50vw - 150px);
     z-index: 9999;
     margin: 0px;
@@ -38,7 +38,7 @@ body.admin_tour_schedule_plans div.Banner {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    width: calc(100vw - 700px);
+    width: calc(66% - 20px);
     z-index: 999;
     margin: 0px;
 }
@@ -67,15 +67,16 @@ body.admin_tour_schedule_plans .column {
 }
 
 /* map sizing */
-body.admin_tour_schedule_plans .column.FlexGrid__col:first-of-type {
+body.admin_tour_schedule_plans .column.FlexGrid__col:first-of-type,
+body.admin_tour_schedule_plans .column.FlexGrid__col:first-of-type .ng-scope,
+body.admin_tour_schedule_plans .column.FlexGrid__col:first-of-type .ng-scope .Map--large {
     height: calc(100vh - 25px) !important;
-    overflow: hidden;
 }
 body.admin_tour_schedule_plans .column.FlexGrid__col:first-of-type * {
     margin: 0px !important;
 }
-body.admin_tour_schedule_plans .overview-map {
-    width: calc(100vw - 680px) !important;
+body.admin_tour_schedule_plans .FlexGrid__col:first-of-type {
+    flex-grow: 2 !important;
 }
 
 /* overview table sizing */
@@ -83,15 +84,14 @@ body.admin_tour_schedule_plans div.tour--schedule--plan--overview {
     height: calc(100vh - 25px);
     overflow: auto;
 }
-body.admin_tour_schedule_plans div.column.FlexGrid__col:nth-of-type(2) {
-    flex: none !important;
+body.admin_tour_schedule_plans .FlexGrid__col:nth-of-type(2) {
     flex-grow: 1 !important;
 }
 
 /* minimize height in table rows */
 body.admin_tour_schedule_plans div.tour--schedule--plan--overview .col,
 body.admin_tour_schedule_plans table.TourPlan .col {
-    padding: 2px 8px !important;
+    padding: 3px 8px !important;
 }
 body.admin_tour_schedule_plans table.TourPlan .col-tour_position {
     padding-left: 16px !important;
@@ -107,17 +107,12 @@ body.admin_tour_schedule_plans div#title_bar.title_bar {
     padding: 8px;
     height: 25px;
 }
-
-body.admin_tour_schedule_plans div#titlebar_left {
-    /*flex-shrink: 100;*/
-}
 body.admin_tour_schedule_plans h2#page_title {
     font-size: 0.7em;
     max-width: calc(100vw - 50px);
     white-space: nowrap;
     overflow: hidden;
 }
-
 body.admin_tour_schedule_plans div#titlebar_right {
     flex-shrink: 0;
     min-width: auto;
@@ -133,28 +128,45 @@ body.admin_tour_schedule_plans span.action_item a {
 /******************
 *  FAST DISPATCH  *
 *******************/
-body.admin_fast_dispatch div.header--production {
+
+/* hide unnecessary information */
+body.admin_fast_dispatch h3,
+body.admin_fast_dispatch div.title_bar,
+body.admin_fast_dispatch div.header--production,
+body.admin_fast_dispatch ul.OptionsSwitcher{
     display: none !important;
+}
+
+/* order of courier selection table to bottom */
+body.admin_fast_dispatch div.columns div.column:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    width: 34% !important;
 }
 body.admin_fast_dispatch div.columns div.column:nth-of-type(2) > div:nth-child(2) {
-    display: none !important;
+    order: 1 !important;
+    margin-top: 50px !important;
 }
+
+/* tour table sizing */
 body.admin_fast_dispatch div.tour--list div.panel_contents div.ScrollableContainer {
     height: calc(100vh - 80px);
+    overflow: auto;
 }
-body.admin_fast_dispatch div.title_bar {
-    display: none;
+
+/* map sizing */
+body.admin_fast_dispatch div.map-wrapper {
+    height: 100vh;
 }
+
+/* delete border gap from components */
 body.admin_fast_dispatch div#active_admin_content,
 body.admin_fast_dispatch div.panel_contents {
     padding: 0px !important;
 }
+
+/* delete gap between columns */
+body.admin_fast_dispatch div.column,
 body.admin_fast_dispatch div.column * {
     margin: 0px !important;
-}
-body.admin_fast_dispatch h3 {
-    display: none;
-}
-body.admin_fast_dispatch div.map-wrapper {
-    height: 100vh;
 }
