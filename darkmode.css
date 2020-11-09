@@ -307,3 +307,25 @@ div#footer p:after {
 table tbody tr:hover {
     background-color: var(--nord3) !important;
 }
+
+/* hotfix for hover on optimasation page */
+body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted {
+    background: var(--nord13) !important;
+}
+body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted * {
+    color: var(--nord1) !important;
+}
+body.admin_tour_schedule_plans tr.TourPlan__stop--moving {
+    background: var(--nord13) !important;
+}
+body.admin_tour_schedule_plans tr.TourPlan__stop--moving * {
+    color: var(--nord1) !important;
+}
+body.admin_tour_schedule_plans tr.TourPlan__stop--moved,
+body.admin_tour_schedule_plans tr.TourPlan__stop--placeholder {
+    background: var(--nord8) !important;
+}
+body.admin_tour_schedule_plans tr.TourPlan__stop--moved *,
+body.admin_tour_schedule_plans tr.TourPlan__stop--placeholder * {
+    color: var(--nord1) !important;
+}
