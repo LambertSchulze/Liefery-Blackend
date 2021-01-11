@@ -1,4 +1,4 @@
-<img src="https://github.com/LambertSchulze/Liefery-Blackend/README Assets/Liefery_Logo.png?raw=true" align="right" width="150" />
+<img src="https://raw.githubusercontent.com/LambertSchulze/Liefery-Blackend/Add-logo-to-readme/README%20Assets/Liefery_Logo.png" align="right" width="150" />
 
 # Liefery-Blackend
 Custom [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)-theme for the Backend at Liefery.
