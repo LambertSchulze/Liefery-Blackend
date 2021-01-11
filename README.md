@@ -31,4 +31,4 @@ In adition, the following functionality is changes:
 - transition effects are turned off, which caused some usability issues by reentering the mouse to a disappearing mega menu
 
 ## Installation for Chrome
-You can find a installation guide for the Chrome Browser in german in the discussions section of thes repository.
+You can find a [installation guide](https://github.com/LambertSchulze/Liefery-Blackend/discussions/6#discussion-1707510) for the Chrome Browser in german in the discussions section of thes repository.
