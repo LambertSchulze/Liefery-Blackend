@@ -209,22 +209,21 @@ div.panel_contents input,
 div.panel_contents select {
     border: none !important;
     background-color: var(--nord3) !important;
-    color: var(--nord4) !important;
+    color: var(--nord4);
 }
 div.buttons a,
 div.buttons a:hover {color: var(--nord11);}
 
 /* Buttons */
-a.button,
-a.Button,
-button.Button,
-div.Button a{
+.button,
+.Button,
+.Button a{
     color: var(--nord8) !important;
+    background-color: transparent !important;
 }
-a.button:hover,
-a.Button:hover,
-button.Button:hover,
-div.Button a:hover {
+.button:hover,
+.Button:hover,
+.Button a:hover {
     text-decoration: underline;
 }
 
