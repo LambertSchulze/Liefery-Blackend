@@ -1,6 +1,6 @@
-/****************
-*  OPTIMIERUNG  *
-*****************/
+/*****************
+ *  OPTIMIERUNG  *
+ *****************/
 
 /* hide unnecessary information */
 body.admin_tour_schedule_plans div.header--production,
@@ -38,7 +38,7 @@ body.admin_tour_schedule_plans div.Banner {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    width: calc(66% - 20px);
+    width: calc(66% - 10px);
     z-index: 999;
     margin: 0px;
 }
@@ -125,9 +125,10 @@ body.admin_tour_schedule_plans span.action_item a {
 }
 
 
-/******************
-*  FAST DISPATCH  *
-*******************/
+
+/*******************
+ *  FAST DISPATCH  *
+ *******************/
 
 /* hide unnecessary information */
 body.admin_fast_dispatch h3,
@@ -145,7 +146,7 @@ body.admin_fast_dispatch div.columns div.column:nth-of-type(2) {
 }
 body.admin_fast_dispatch div.columns div.column:nth-of-type(2) > div:nth-child(2) {
     order: 1 !important;
-    margin-top: 50px !important;
+    margin-top: 30px !important;
 }
 
 /* tour table sizing */
@@ -169,4 +170,17 @@ body.admin_fast_dispatch div.panel_contents {
 body.admin_fast_dispatch div.column,
 body.admin_fast_dispatch div.column * {
     margin: 0px !important;
+}
+
+
+
+/**********
+ * GLOBAL *
+ **********/
+
+/* add email and link to code to footer */
+body.admin_fast_dispatch #footer p::after,
+body.admin_tour_schedule_plans #footer p::after {
+    content: 'changes by 📧lambert@liefery.com - code at 🔗github.com/LambertSchulze/Liefery-Blackend';
+    display: block;
 }
