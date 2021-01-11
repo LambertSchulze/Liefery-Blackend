@@ -308,11 +308,13 @@ table tbody tr:hover {
     background-color: var(--nord3) !important;
 }
 
-/* hotfix for hover on optimasation page */
-body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted {
+/* hotfix for highlighted rows on optimasation/dispatcher page */
+body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted,
+body.admin_fast_dispatch tr.highlighted {
     background: var(--nord13) !important;
 }
-body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted * {
+body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted *,
+body.admin_fast_dispatch tr.highlighted * {
     color: var(--nord1) !important;
 }
 body.admin_tour_schedule_plans tr.TourPlan__stop--moving {
