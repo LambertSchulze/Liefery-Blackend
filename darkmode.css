@@ -1,6 +1,7 @@
 /***********
  * GENERAL *
  ***********/
+
 * {
     box-shadow: none !important;
     text-shadow: none !important;
@@ -33,15 +34,15 @@ h3 {
     color: var(--nord4) !important;
 }
 
+
+
 /***************
  * MENU LEISTE *
  ***************/
+
 div#header.header--production {
     background-color: var(--nordbg);
-    position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 9999999999999999999999999999999999999999999999999999999999;
 }
 div#header,
 div#header ul.menu,
@@ -61,12 +62,14 @@ div#header>h1#site_title.site_title:after {
     position: absolute;
     top: 16px;
 }
+
 /* aktive Seite */
 div#header .menu_item.current>a {
     background-color: var(--nord2) !important;
     color: var(--nord6) !important;
     text-shadow: none !important;
 }
+
 /* hover */
 .header-item li > a:hover,
 .header-item li > a:focus,
@@ -74,6 +77,7 @@ div#header .menu_item.current>a {
     background-color: var(--nord3) !important;
     color: var(--nord6);
 }
+
 /* Avatar */
 ul#utility_nav.header-item {
     /*background: url('') no-repeat !important;*/
@@ -81,9 +85,12 @@ ul#utility_nav.header-item {
     border-radius: 50% !important;
 }
 
+
+
 /*********************************
  * Title bar (title of the page) *
  *********************************/
+
 div#title_bar.title_bar {
     padding-top: 64px;
     background-color: var(--nord0);
@@ -102,9 +109,12 @@ span.action_item input#quick_search {
     color: var(--nord4);
 }
 
+
+
 /****************
  * Main Content *
  ****************/
+
 div.table_tools {
     background-color: var(--nord0);
     border: none !important;
@@ -183,9 +193,12 @@ i.fa.fa-envelope.fa-lg {color: var(--nord7);}
 i.fa.fa-car.fa-lg {color: var(--nord7);}
 i.fa.fa-hand-paper-o.fa-lg {color: var(--nord12);}
 
+
+
 /***********
  * SIDEBAR *
  ***********/
+
 div.sidebar h3 {
     background-color: var(--nord0);
     color: var(--nord4);
@@ -235,6 +248,22 @@ textarea#comment_text {
     color: var(--nord4);
 }
 
+
+
+/**********
+ * FOOTER *
+ **********/
+
+div#footer p {
+    color: var(--nord1);
+}
+
+
+
+/*********
+ * OTHER *
+ *********/
+
 /* diverses */
 span.blank_slate {
     color: var(--nord4);
@@ -243,6 +272,32 @@ span.blank_slate {
 div.blank_slate_container {
     background-color: var(--nord0);
 }
+table tbody tr:hover {
+    background-color: var(--nord3) !important;
+}
+body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted,
+body.admin_fast_dispatch tr.highlighted {
+    background: var(--nord13) !important;
+}
+body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted *,
+body.admin_fast_dispatch tr.highlighted * {
+    color: var(--nord1) !important;
+}
+body.admin_tour_schedule_plans tr.TourPlan__stop--moving {
+    background: var(--nord13) !important;
+}
+body.admin_tour_schedule_plans tr.TourPlan__stop--moving * {
+    color: var(--nord1) !important;
+}
+body.admin_tour_schedule_plans tr.TourPlan__stop--moved,
+body.admin_tour_schedule_plans tr.TourPlan__stop--placeholder {
+    background: var(--nord8) !important;
+}
+body.admin_tour_schedule_plans tr.TourPlan__stop--moved *,
+body.admin_tour_schedule_plans tr.TourPlan__stop--placeholder * {
+    color: var(--nord1) !important;
+}
+
 /* selections */
 *::selection {
     background-color: var(--nord8) !important;
@@ -280,20 +335,29 @@ div.Banner__content {
     border-bottom: none;
 }
 
-/* Footer */
-div#footer p {
-    color: var(--nord1);
-}
+/* email and link to code in footer */
 div#footer p:after {
-    content: "Blackend Edition: created by Lambert Schulze - @IT: hire me! ;-)";
+    content: 'Blackend Edition: created by 📧lambert@liefery.com - code at 🔗github.com/LambertSchulze/Liefery-Blackend';
     display: block;
 }
 
-/* Sprach Switcher ausblenden */
+
+
+/*****************
+ * FUNCTIONALITY *
+ *****************/
+
+/* turn off transitions */
+* {
+    transition: 0s !important;
+}
+
+/* hide language selection */
 .OptionsSwitcher {
     display: none;
 }
-/* Nach oben immer anzeigen */
+
+/* always show to-top button */
 .scroll--to--top {
     position: fixed;
     bottom: 0;
@@ -303,31 +367,9 @@ div#footer p:after {
     color: var(--nord11);
 }
 
-/* hotfix for white hover on tables */
-table tbody tr:hover {
-    background-color: var(--nord3) !important;
-}
-
-/* hotfix for highlighted rows on optimasation/dispatcher page */
-body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted,
-body.admin_fast_dispatch tr.highlighted {
-    background: var(--nord13) !important;
-}
-body.admin_tour_schedule_plans tr.tour--schedule--plan--highlighted *,
-body.admin_fast_dispatch tr.highlighted * {
-    color: var(--nord1) !important;
-}
-body.admin_tour_schedule_plans tr.TourPlan__stop--moving {
-    background: var(--nord13) !important;
-}
-body.admin_tour_schedule_plans tr.TourPlan__stop--moving * {
-    color: var(--nord1) !important;
-}
-body.admin_tour_schedule_plans tr.TourPlan__stop--moved,
-body.admin_tour_schedule_plans tr.TourPlan__stop--placeholder {
-    background: var(--nord8) !important;
-}
-body.admin_tour_schedule_plans tr.TourPlan__stop--moved *,
-body.admin_tour_schedule_plans tr.TourPlan__stop--placeholder * {
-    color: var(--nord1) !important;
+/* sticky main navigation */
+div#header.header--production {
+    position: fixed;
+    top: 0;
+    z-index: 9999999999999999999999999999999999999999999999999999999999;
 }
