@@ -3,6 +3,7 @@
 # Liefery-Blackend
 Custom [Stylus](https://github.com/openstyles/stylus)-theme for the Backend at Liefery.
 
+
 ## Overview
 This repository features two custom styles for the in-house software at [Liefery](www.liefery.com). These are CSS files that can be used in browser extensions that run custom CSS (like Stylus does).
 
@@ -32,3 +33,12 @@ In adition, the following functionality is changes:
 
 ## Installation for Chrome
 You can find a [installation guide](https://github.com/LambertSchulze/Liefery-Blackend/discussions/6#discussion-1707510) for the Chrome Browser in german in the discussions section of thes repository.
+
+## Screenshots
+
+<img src="https://raw.githubusercontent.com/LambertSchulze/Liefery-Blackend/master/README%20Assets/Blackend_light.png" width="50%" />
+Original Style
+
+
+<img src="https://raw.githubusercontent.com/LambertSchulze/Liefery-Blackend/master/README%20Assets/Blackend_dark.png" width="50%" />
+Blackend Style
